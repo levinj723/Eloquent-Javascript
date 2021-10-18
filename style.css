@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("snow.jpg");
+    background-size: cover;
+    background-position: center center; 
+    display: flex;
+    flex-direction: column;
+    font-family:'Courier New', Courier, monospace'
+    margin = 0; 
+}
+.countdown-container{
+    dislplay: flex;
+}
