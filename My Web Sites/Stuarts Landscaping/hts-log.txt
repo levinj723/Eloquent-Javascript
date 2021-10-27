@@ -1,0 +1,29 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 04 Oct 2021 16:08:02 at http://www.stuartslandscaping.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://www.stuartslandscaping.com/ -O1 "C:\My Web Sites\Stuarts Landscaping" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+16:08:50	Error: 	"Not Found" (404) at link www.stuartslandscaping.com/img/apple-touch-icon-72x72-precomposed.png/ (from www.stuartslandscaping.com/)
+16:08:50	Error: 	"Not Found" (404) at link www.stuartslandscaping.com/img/apple-touch-icon-114x114-precomposed.png/ (from www.stuartslandscaping.com/)
+16:08:50	Error: 	"Not Found" (404) at link www.stuartslandscaping.com/img/touch-icon-iphone-precomposed.png/ (from www.stuartslandscaping.com/)
+16:49:59	Error: 	"Not Found" (404) at link www.stuartslandscaping.com/img/glyphicons-halflings.png/ (from www.stuartslandscaping.com/css/sass.css)
+16:49:59	Error: 	"Not Found" (404) at link www.stuartslandscaping.com/img/glyphicons-halflings-white.png/ (from www.stuartslandscaping.com/css/sass.css)
+16:49:59	Error: 	"Not Found" (404) at link www.stuartslandscaping.com/img/checkbox.gif/ (from www.stuartslandscaping.com/css/sass.css)
+16:49:59	Error: 	"Not Found" (404) at link www.stuartslandscaping.com/img/select-bg.gif/ (from www.stuartslandscaping.com/css/sass.css)
+16:49:59	Error: 	"Not Found" (404) at link www.stuartslandscaping.com/css/fancybox_sprite@2x.png/ (from www.stuartslandscaping.com/css/jquery.fancybox.css)
+16:49:59	Error: 	"Not Found" (404) at link www.stuartslandscaping.com/css/fancybox_loading@2x.gif/ (from www.stuartslandscaping.com/css/jquery.fancybox.css)
+16:50:06	Error: 	"Not Found" (404) at link www.stuartslandscaping.com/blastlibrary/images/thumbnail-image-placeholder.gif/ (from www.stuartslandscaping.com/blog.iml)
+16:50:06	Warning: 	Retry after error -5 (Unable to get server's address: This is usually a temporary error during hostnam) at link connect.facebook.net/en_US/all.js (from www.stuartslandscaping.com/blog/frequently-asked-questions/)
+16:50:06	Error: 	"Not Found" (404) at link www.stuartslandscaping.com/blog_rss.xml/ (from www.stuartslandscaping.com/blog/frequently-asked-questions/)
+16:50:09	Error: 	"Not Found" (404) at link www.stuartslandscaping.com/img/pagination-arrow.gif/ (from www.stuartslandscaping.com/css/blog.css)
+16:50:09	Error: 	"Not Found" (404) at link www.stuartslandscaping.com/img/pagination-arrow2.gif/ (from www.stuartslandscaping.com/css/blog.css)
+16:50:09	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link connect.facebook.net/en_US/all.js (from www.stuartslandscaping.com/blog/frequently-asked-questions/)
+16:50:21	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link connect.facebook.net/en_US/all.js (from www.stuartslandscaping.com/blog/frequently-asked-questions/)
+16:50:21	Warning: 	Retry after error -4 (No data (connection closed)) at link code.jquery.com/ui/1.10.4/themes/smoothness/images/ui-bg_flat_0_aaaaaa_40x100.png (from code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css)
+16:50:21	Warning: 	Retry after error -4 (No data (connection closed)) at link code.jquery.com/ui/1.10.4/themes/smoothness/images/ui-bg_flat_0_aaaaaa_40x100.png (from code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css)
+
+HTTrack Website Copier/3.49-2 mirror complete in 42 minutes 20 seconds : 346 links scanned, 327 files written (63647020 bytes overall) [62380900 bytes received at 24559 bytes/sec], 2157481 bytes transferred using HTTP compression in 74 files, ratio 29%, 1.0 requests per connection
+(14 errors, 4 warnings, 0 messages)

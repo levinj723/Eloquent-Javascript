@@ -1,0 +1,83 @@
+.second{
+text-align: center;
+background-color: $lightGrayishBlue;
+@include breakpoint-up(large){
+    
+    min-height: 42.25em;
+ }
+
+
+
+
+&__top{
+    padding-top: 5.375rem; 
+    
+    h2{
+        font-weight: normal;
+        margin-bottom: 2rem;
+        color: black; 
+        font-size: 2rem; 
+    }
+    p{
+        margin-bottom: 4.375rem; 
+        font-size: $font-sm;
+        font-weight: 400; 
+    }
+
+    @include breakpoint-up(large){
+        text-align: left; 
+        margin-left: 8.5rem; 
+        margin-right: 8.5rem;
+        
+        p{
+            max-width: 31.25rem;
+            margin-bottom: 4.5rem;
+            font-size: $font-med;
+        }
+        
+     }
+    
+}
+
+
+&__bottom{
+    font-weight: normal;
+
+    @include breakpoint-up(large){
+        display: flex; 
+        margin-left: 8.5rem; 
+        margin-right: 8.5rem;
+        text-align: left; 
+
+       h3{
+        margin-top: 2.625rem;
+        font-size: 1.625rem;
+        margin-bottom:1.875rem;
+        
+    }
+       p{
+        margin-right: 2.25rem;
+        
+       }
+       &__fourth p {
+
+        padding-right: 0px; 
+       }
+    }
+
+   h3{
+       font-weight: normal;
+       color: black; 
+        
+   }
+   p{
+        font-size: $font-sm;
+        margin-bottom: 0px;
+        padding-bottom:0.875rem
+        
+   }
+
+
+}
+
+}

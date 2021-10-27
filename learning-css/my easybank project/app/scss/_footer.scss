@@ -1,0 +1,116 @@
+.footer{
+    @include breakpoint-up(large){
+        display: flex; 
+        justify-content: space-between;
+        align-items: center; 
+        height: 12em; 
+        padding:  0px  10.3125rem; 
+        &__logo{
+
+            position: relative; 
+            bottom: 1.5rem; 
+        }
+
+   
+
+    }
+    
+height: 31.875em; 
+background-color: $darkBlue;
+
+    &__logo{
+        padding-top: 2.5rem; 
+        text-align: center;
+        font-weight: 1500;
+        color:white; 
+    }
+
+    
+
+    &__social{
+        text-align:center; 
+        
+        
+        img{
+           
+            margin:1.5rem .5rem;    
+            
+        }
+
+    }
+
+
+    @include breakpoint-up(large){
+        .secondd {
+            position: relative;
+            right: 6.5rem; 
+        }
+        .firstt{
+
+            position: relative;
+            right: 4rem; 
+        }
+
+    }
+
+
+    &__links{
+        display: flex; 
+        flex-direction: column;
+        align-items: center; 
+
+        @include breakpoint-up(large){
+           
+            
+                // background-color: orange;
+                align-items: flex-start;
+                
+          
+        }
+        
+        a{
+            color:$lightGrayishBlue; 
+            padding-bottom: 1.25rem;
+            transition: color 300ms ease-in-out;
+
+            &:hover{
+
+                color: $limeGreen;
+
+            }
+        }
+        
+
+
+
+    }
+
+    &__button{
+        text-align:center;
+        padding: 1.35rem; 
+
+    }
+
+    &__cta{
+        font-size: $font-sm;
+        color: white; 
+        transition: opacity 300ms ease-in-out;
+        
+    
+        &:hover{
+            opacity: 0.75; 
+            
+        }
+
+
+    }
+
+    &__copyright{
+        padding-top: 1.75rem; 
+        text-align: center;
+        font-size:$font-sm;
+        color:$grayishBlue;
+    }
+
+
+}

@@ -1,0 +1,100 @@
+
+.hero {
+    
+        margin-bottom: 3rem; 
+        @include breakpoint-up(large){
+            display: flex;
+            flex-direction: row-reverse; 
+            height: 41.25rem; 
+            
+        }
+      
+        
+
+    &__image {
+        height: 17.5rem;
+        background-image: url(../../images/bg-intro-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position: center center ; 
+        text-align: center;
+
+        @include breakpoint-up(large){
+            background-image: url(../../images/bg-intro-desktop.svg);
+            
+            height: auto; 
+            width: 52%;  
+            background-size: 175%; 
+            background-position: center center; 
+            background-position-x: -70px;
+            background-position-y: -275px; 
+             overflow-x: clip;
+        }
+
+
+        &__main{
+            @include breakpoint-up(large){
+                max-width: none; 
+                left: 100px; 
+                width: 105%;
+                max-width: 800px; 
+                z-index: 1;
+                 
+            }
+            position: relative; 
+            width: 100%;
+            max-width: 25rem; 
+            bottom: 7.5rem; 
+            
+
+        }
+       
+    }
+
+    &__text{
+
+       
+        @include breakpoint-up(large){
+        width: 48%; 
+        text-align: left;
+        padding-left: 10.3125rem; 
+        padding-right: 6.25rem; 
+        padding-top: 11.25rem; 
+        h1{
+            font-size: 2.75rem; 
+        }
+        p{
+            font-size: $font-med;
+        }
+        }
+
+        h1{
+            color: black; 
+        }
+        p{
+            margin-bottom: 3.625rem; 
+        }
+        text-align: center;
+
+
+
+
+    }
+    &__cta{
+
+        
+        font-size: $font-sm;
+        color: white; 
+        transition: opacity 300ms ease-in-out;
+        
+    
+        &:hover{
+            opacity: 0.75; 
+            
+        }
+
+    }
+
+}
+
+

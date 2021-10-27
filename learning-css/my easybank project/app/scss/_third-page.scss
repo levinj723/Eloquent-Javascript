@@ -1,0 +1,119 @@
+.third{
+
+    padding: 6rem 0px; 
+    background-color: $veryLightGray;
+   
+    @include breakpoint-up(large){
+        padding:  0px  10.3125rem; 
+    }
+
+
+    &__top{
+        @include breakpoint-up(large){
+            text-align: left;
+            padding-top: 6rem; 
+            font-size: 2rem;
+            margin-bottom: 3.375rem;
+        }
+
+        text-align: center;
+        font-size: 1.625rem;
+        color: black; 
+        margin-bottom: 2.375rem; 
+    }
+    &__bottom{
+        
+        padding-right: 1.5rem;
+        padding-left: 1.5rem; 
+
+        @include breakpoint-up(large){
+            display: flex;
+            padding-left: 0px; 
+            padding-right: 0px; 
+           
+            &__first, &__second, &__third{
+                margin-right: 1.875rem ;
+            }
+            
+        }
+        
+        
+        .picture{
+            
+            background-size: cover; 
+            height: 12.5rem;
+            border-radius: 5px;
+            margin-bottom:2rem; 
+        }
+        .author{
+            font-size: .625rem; 
+            margin-bottom: 1rem;
+           
+        }
+
+        .title{
+            margin-bottom: 1rem;
+            font-size: 1rem; 
+            color: black; 
+            transition: color 200ms ease-in-out;
+            &:hover{
+                color: $limeGreen;
+            }
+            
+        }
+
+        .content{
+            font-size: $font-xsm; 
+            margin-bottom: 4.1875rem; 
+            
+        }
+        
+        
+       
+        &__first{
+            .picture{
+            background-image: url(../../images/image-currency.jpg);
+            }
+            background-color: white;
+        }
+        &__second{
+            .picture{
+            background-image: url(../../images/image-restaurant.jpg);
+        }
+        background-color: white;
+        }
+        &__third{
+            .picture{
+            background-image: url(../../images/image-plane.jpg); 
+
+            }
+            background-color: white;
+        }
+        &__fourth{
+            .picture{
+            background-image: url(../../images/image-confetti.jpg); 
+            }
+            background-color: white;
+        }
+
+  
+
+    }
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
