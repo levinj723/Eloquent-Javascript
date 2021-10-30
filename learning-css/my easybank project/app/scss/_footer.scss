@@ -31,9 +31,18 @@ background-color: $darkBlue;
         text-align:center; 
         
         
-        img{
+        svg{
            
             margin:1.5rem .5rem;    
+            
+           &:hover{
+               
+               path{
+                   fill:$limeGreen;
+               }
+               
+           }
+                
             
         }
 

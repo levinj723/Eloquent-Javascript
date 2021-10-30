@@ -584,8 +584,12 @@ button, .button {
   text-align: center;
 }
 
-.footer__social img {
+.footer__social svg {
   margin: 1.5rem .5rem;
+}
+
+.footer__social svg:hover path {
+  fill: #31d35c;
 }
 
 @media (min-width: 64em) {

@@ -1,0 +1,106 @@
+.header{
+
+background-image: url(images/bg-mobile-dark.jpg);
+background-repeat: no-repeat; 
+background-size: cover; 
+min-height: 12.5rem; 
+padding-top: 3rem;
+
+
+
+    &__logo{
+        display: flex; 
+        justify-content: space-between;
+
+        color:white; 
+        letter-spacing: 0.75rem ;
+        font-size: 1.375rem; 
+        font-weight: 700; 
+        
+}
+
+    &__create{
+        
+        margin-top: 1.5rem;
+        border-radius: 5px; 
+
+    }
+    
+
+
+
+
+}
+
+.main{
+
+
+    background-color: $veryDarkDesaturatedBlue;
+    height: 33.125em; 
+   
+     .list__other{
+         
+        min-height: 3rem; 
+        width: 100%; 
+        background-color: $veryDarkGrayishBlue2;
+        display:flex; 
+        align-items:center; 
+        &:not(:last-child){
+            border-bottom: 1px solid $veryDarkGrayishBlue1; 
+        }
+       
+        [type="text"]{
+            color:$lightGrayishBlue;
+        }
+        
+        &:hover > .delete{
+            transition: opacity 400ms ease-in-out;
+            opacity:100%;
+            cursor: pointer;
+            
+        }
+    }
+
+
+    &__inner{
+        position: relative; 
+        bottom: 1.75rem; 
+        border-radius: 5px;
+        overflow: hidden;
+
+        .delete{
+        opacity: 0; 
+        float: right; 
+        margin-right: 1rem; 
+        }
+       
+
+
+    
+    }
+    &__bottom{
+
+        .footer{
+            border-radius: 5px; 
+            justify-content:center;
+            color:$veryDarkGrayishBlue1; 
+            
+
+            .list__item{
+                &:not(:first-child){
+                margin-left: 1rem;
+                }
+
+                transition: color 150ms ease-in-out;
+                &:hover{
+                    cursor: pointer; 
+                    color:$brightBlue;
+                   
+                }
+
+            }
+        }
+
+
+    }
+}
