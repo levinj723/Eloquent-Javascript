@@ -1,0 +1,297 @@
+.header {
+
+    height: 9.75em;
+    width: 100%;
+    background-color: $desaturatedDarkCyan;
+    background-image: url(images/bg-header-mobile.svg );
+    background-size: cover;
+    background-repeat: no-repeat;
+    // margin-bottom: 1.5rem; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    
+    .filters{
+
+        display: none;
+        // flex-wrap: wrap;  
+        background-color: white; 
+        border-radius: 5px; 
+        justify-content: space-between; 
+        align-content: center; 
+        text-align: center;
+        position: relative; 
+        width: 20.5rem;
+        box-shadow: 0px 5px 10px hsla(180, 29%, 50%, 0.25);
+
+        top: 5rem;
+        padding: 1.5rem 1.5rem;
+
+        @include breakpoint-up(medium){
+            width: 90%; 
+            
+            
+         }
+
+
+        .outer{
+            display: flex; 
+            flex-wrap: wrap;
+            width: 90%; 
+
+
+
+        .filterButton{
+
+            
+                display:flex; 
+                overflow: hidden; 
+                align-items: center;
+                font-size: .75rem;
+                font-weight: 700;
+                color: $desaturatedDarkCyan;
+                border-radius: 8px;
+                margin: .25rem .5rem;
+                background-color: $lightGrayishCyan;
+
+              
+             
+                img{
+                    float: right; 
+                    width: 1.75rem; 
+                    padding: .5rem; 
+                    margin-left: .25rem; 
+                    background-color: $desaturatedDarkCyan;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: black;
+                    }
+                }  
+               
+
+                }
+            }
+
+        .clear{
+
+            align-self: center;
+            padding: .5rem; 
+            font-size: .875rem; 
+            color: $veryDarkGrayishCyan; 
+            font-weight: 700; 
+            // position:relative; 
+            right: 0px;
+            float: right; 
+            &:hover{
+                cursor: pointer;
+                color: $desaturatedDarkCyan;
+            }
+           
+ 
+
+            // left: 20px;  
+
+        }
+
+    }
+
+}
+
+
+
+.main {
+
+    transition: all 300ms ease-in-out; 
+    height: 188.75rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $lightGrayishCyan;
+ 
+
+
+
+    &__box {
+
+        min-height: 16rem;
+        width: 20.5rem;
+        margin: 1.25rem 0px;
+        padding: 0px 1.5rem;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0px 5px 10px hsla(180, 29%, 50%, 0.25);
+      
+        @include breakpoint-up(medium){
+
+            display: flex; 
+            align-items: center;
+           justify-content:space-between; 
+            min-height: 5rem; 
+            width: 90%; 
+            padding: 1rem 1.5rem; 
+        }
+
+
+        &:hover {
+           
+            border-left: 5px solid $desaturatedDarkCyan;
+            padding-left: 1.1875rem;
+            
+        }
+
+        img {
+            width: 3rem;
+            height: 3rem;
+            bottom: 1.5rem;
+            position: relative;
+
+            @include breakpoint-up(medium){
+
+                position: static; 
+                bottom: 0px;  
+
+                margin-right: 2rem ;
+                
+                width: 5rem; 
+                height: 5rem; 
+                
+             }
+ 
+           
+        }
+
+        .moveUp {
+
+            position: relative;
+            bottom: 1rem;
+            border-bottom: 1px solid $darkGrayishCyan;
+            padding-bottom: 1.4rem;
+
+            @include breakpoint-up(medium){
+
+               position: static; 
+               border: none; 
+            }
+
+        }
+
+        .first {
+            display: flex;
+            align-items: center;
+
+            // position: relative; 
+            // bottom: 1.125rem; 
+            .company {
+                margin-right: 1rem;
+                font-size: 0.75rem;
+                color: $desaturatedDarkCyan;
+                font-weight: 700;
+            }
+
+            button {
+                // background-color: $desaturatedDarkCyan;
+                color: $lightGrayishCyan;
+                font-size: .625rem;
+                font-weight: 700;
+                letter-spacing: 1px;
+
+                padding: .4rem .625rem;
+                border: none;
+                border-radius: 15px;
+                margin: .25rem;
+
+
+            }
+
+            .new {
+                background-color: $desaturatedDarkCyan;
+            }
+
+            .featured {
+                background-color: black;
+            }
+
+
+        }
+
+        .position {
+            font-size: .8125rem;
+            font-weight: 700;
+            letter-spacing: .75px;
+            padding: .75rem 0px;
+          
+        }
+
+        .second {
+            display: flex;
+            color: $darkGrayishCyan;
+            font-size: .75rem;
+            font-weight: 500;
+            // padding-top: .5625rem; 
+
+
+            .middle {
+                margin-right: 1rem;
+
+                &:first-child {
+                    list-style: none;
+                }
+
+
+            }
+
+
+        }
+
+        .third {
+
+            display: flex;
+            align-items: center;
+            max-width: 100%;
+            flex-wrap: wrap;
+
+            @include breakpoint-up(medium){
+                width: 60%; 
+                text-align: right;
+                display: flex; 
+                flex-wrap: wrap ; 
+                justify-content: right;
+                
+             }
+ 
+
+
+            .bottom {
+                padding: .5rem;
+                font-size: .75rem;
+                font-weight: 700;
+                color: $desaturatedDarkCyan;
+                // border: 1px solid black;
+                border-radius: 8px;
+                margin: .25rem .5rem;
+                background-color: $lightGrayishCyan;
+
+                // @include breakpoint-up(medium){
+                //     min-width: 75%; 
+                //     text-align: right;
+                //     display: flex; 
+                    
+                //  }
+
+                &:hover{
+                    cursor: pointer;
+                }
+
+                // text-align: center;
+
+
+
+            }
+
+        }
+
+
+
+    }
+}
