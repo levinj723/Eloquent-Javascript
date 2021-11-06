@@ -1,28 +1,46 @@
-$(document).ready(function () {
-  var trigger = $('.hamburger'),
-      overlay = $('.overlay'),
-     isClosed = false;
 
-    trigger.click(function () {
-      hamburger_cross();      
-    });
+function person(name) {
 
-    function hamburger_cross() {
+  const obj = {}; 
+  obj.name = name; 
+  obj.greeting = function (){
 
-      if (isClosed == true) {          
-        overlay.hide();
-        trigger.removeClass('is-open');
-        trigger.addClass('is-closed');
-        isClosed = false;
-      } else {   
-        overlay.show();
-        trigger.removeClass('is-closed');
-        trigger.addClass('is-open');
-        isClosed = true;
-      }
+    return "my name is " +  this.name; 
+
   }
-  
-  $('[data-toggle="offcanvas"]').click(function () {
-        $('#wrapper').toggleClass('toggled');
-  });  
-});
+
+  return obj; 
+
+
+}; 
+
+Dicky = person("Dicky"); 
+
+console.log ( Dicky.greeting()); 
+
+function bigPerson(name) {
+
+this.name = name; 
+this.greeting = function (){
+
+  return "My name is " + this.name + " and I like beefstu";
+}
+
+
+
+}
+
+
+FatGeorge = new bigPerson("george"); 
+
+
+console.log(FatGeorge.__proto__); 
+
+FatHarry = Object.create(FatGeorge); 
+
+FatHarry.name = "Harry"
+
+
+
+
+

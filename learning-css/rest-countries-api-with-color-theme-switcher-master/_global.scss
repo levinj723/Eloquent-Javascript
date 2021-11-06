@@ -1,0 +1,53 @@
+
+*,*::before, *::after{
+
+    box-sizing: inherit;
+}
+
+body{
+
+    box-sizing: border-box; 
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0; 
+    padding: 0; 
+    letter-spacing: .8px;
+    line-height: 1;
+
+
+}
+
+.wrap{
+
+    padding-left: 1rem; 
+    padding-right: 1rem; 
+
+}
+
+.wrap-other{
+    padding-left: 1.75rem; 
+    padding-right: 1.75rem;
+}
+
+.alternateDark{
+    background-color: $darkBlue;
+}
+.alternateVeryDark {
+    background-color: $veryDarkBlue; 
+}
+
+.alternate{
+    
+    color: black; 
+    background-color: white;
+}
+
+.otherAlternate{
+    
+
+    background-color: $veryLightGrayLightMode; 
+}
+.moonAlternate{
+
+    filter: invert(180); 
+
+}
